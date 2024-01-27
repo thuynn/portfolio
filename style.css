@@ -81,6 +81,8 @@ a {
     .logo-img {
         -webkit-mask: url(imgs/logo.svg) no-repeat center;
         mask: url(imgs/logo.svg) no-repeat center;
+        display: inline-block;
+        width: 43px;
     }
     .logo__txt {
         font-family: 'Bebas Neue', sans-serif;
