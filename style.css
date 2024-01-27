@@ -1,8 +1,8 @@
 :root {
     --main-color: #414f6b;
-    --font-size-1: 12px;
-    --font-size-2: 16px;
-    --font-size-3: 21px;
+    --font-size-1: 1.2rem;
+    --font-size-2: 1.6rem;
+    --font-size-3: 2.1rem;
 }
 *, ::before, ::after {
   box-sizing: border-box;
@@ -78,12 +78,7 @@ a {
         border-radius: 50%;
         width: 43px;
     }
-    .logo-img {
-        -webkit-mask: url(imgs/logo.svg) no-repeat center;
-        mask: url(imgs/logo.svg) no-repeat center;
-        display: inline-block;
-        width: 43px;
-    }
+
     .logo__txt {
         font-family: 'Bebas Neue', sans-serif;
         font-size: var(--font-size-3);
@@ -299,9 +294,9 @@ a {
 
 @media (max-width:600px)  {
     :root {
-        --font-size-1: 15px;
-        --font-size-2: 20rem;
-        --font-size-3: 25px;
+        --font-size-1: 1.8rem;
+        --font-size-2: 2rem;
+        --font-size-3: 3rem;
     }
     .logo {
         img {width: 50px;}
