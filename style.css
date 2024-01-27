@@ -13,7 +13,7 @@ body {
     font-size: 1.6rem;
     margin: 0;
     padding: 0;
-
+    line-height: 2.4rem;
 }
 
 h1,
@@ -148,7 +148,6 @@ a {
     min-height: 900px;
     padding-top: 50px;
     p {
-        line-height: 2.4rem;
         margin: -0.6rem 0 0 6.4rem
     }
 }
@@ -161,7 +160,6 @@ a {
         width: 352px;
         min-height: 229px;
         padding: 20px 40px;
-        line-height: 2.4rem;
         background: rgba(255,255,255,0.7);
        .info-container__title {
             color: var(--main-color);
@@ -178,7 +176,6 @@ a {
     background: white;
     p {
         margin: 0 80px;
-        line-height: 24px;
     }
 }
 
@@ -267,7 +264,6 @@ a {
         display: flex;
         align-items: center;
     }
-
 }
 @media (max-width: 992px) {
     .nav-contaier {
@@ -277,5 +273,11 @@ a {
 @media (min-width: 992px) {
     .navbar-toggler,.top-bar.navbar-expand-lg .navbar-collapse {
         display: none!important;
+    }
+}
+
+@media (max-width:800px)  {
+    body {
+        font-size: 2rem;
     }
 }
