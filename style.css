@@ -16,7 +16,7 @@ body {
     font-size: var(--font-size-2);
     margin: 0;
     padding: 0;
-    line-height: 2.4rem;
+    line-height: 1.7;
 }
 
 h1,
@@ -123,6 +123,7 @@ a {
 
 .main-container {
     background: url(imgs/bg1.png) no-repeat top center;
+    background-size: cover;
     min-height: 900px;
     position: relative;
     .nav-contaier {
@@ -153,6 +154,7 @@ a {
 
 .history-container {
     background: url(imgs/bg2.png) no-repeat top center;
+    background-size: cover;
     min-height: 900px;
     padding-top: 50px;
     p {
@@ -162,13 +164,15 @@ a {
 
 .team-container {
     background: url(imgs/bg3.png) no-repeat center;
+    background-size: cover;
     min-height: 550px;
     .max-width {padding: 100px 30px;}
     .info-container {
-        max-width: 352px;
-        min-height: 229px;
         padding: 20px 40px;
         background: rgba(255,255,255,0.7);
+        .flex {
+            gap: 50px;
+        }
        .info-container__title {
             color: var(--main-color);
             font-size: 3.2rem;
@@ -216,9 +220,10 @@ a {
         font-size: var(--font-size-1);
     }
 }
-
-.carousel {
+.slide-container {
     background: rgba(65, 79, 107, 0.8);
+}
+.carousel {
     padding: 2.4rem 2.4rem 3rem 2.4rem;
     .carousel-control-next {
         display: none;
@@ -277,30 +282,15 @@ a {
 }
 
 @media (max-width: 992px) {
-    .nav-contaier {
-        display: none;
-    }
-}
-@media (min-width: 992px) {
-    .navbar-toggler,.top-bar.navbar-expand-lg .navbar-collapse {
-        display: none!important;
-    }
-}
-
-@media (max-width:600px)  {
     :root {
         --font-size-1: 1.8rem;
-        --font-size-2: 2rem;
+        --font-size-2: 3rem;
         --font-size-3: 3rem;
-    }
-    body {
-        line-height: 3rem;
     }
     .logo {
         img {width: 50px;}
     }
     .main-container {
-        background-size: cover;
         background-position: 40%;
     }
     .climb_container .max-width {
@@ -312,5 +302,13 @@ a {
         .logo {
             margin-bottom: 10px;
         }
+    }
+    .nav-contaier {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+    .navbar-toggler,.top-bar.navbar-expand-lg .navbar-collapse {
+        display: none!important;
     }
 }
